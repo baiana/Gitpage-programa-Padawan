@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dist/device-mockups.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   body {
@@ -162,91 +163,135 @@
   </div>
 </div>
 
-<div id="como" class="container-fluid bg-2 text-center">
-  <h4 class="grande">Projeto calculadora</h4>
-  <div class="row">
-  <div class="col-sm-4">
-  <img src="http://gsmwink.nl/wp-content/uploads/2015/06/lgg3zwart.png" class="img-responsive" style="display:inline ">
-  </div>
-  
-  
+  <div id="como" class="container-fluid bg-2 text-center">
+    <h4 class="grande">Projeto calculadora</h4>
+      <div class="row">
+      <div class="col-sm-4">
+       
 
-
-
-  </div>
-
-  <h4 class="grande">Projeto Filmes</h4>
-  <div class="row">
-  <div class="col-sm-6" style="margin-left:100px">
-<ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
- 
-  <li class="nav-item active" style="margin-right:80px;" >
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">O projeto</a>
-  </li>
-  <li class="nav-item" style="margin-right:80px;">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" >Links úteis</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" >Código</a>
-  </li>
-</ul>
-<div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" style=" text-align: justify; margin-top:30px;">
-  Para o projeto recomendaFilmes, a ideia é criar um aplicativo que receba o resultado de uma chamada da API theMovieDB (que guarda os mais diversos dados relacionados a filmes) e exibi-lo para o usuário dentro de categorias. Permitindo  também: pesquisa de filmes não listados,  seleção de filmes "favoritos" e a possibilidade de acesso offline através de persistência em banco de dados. A lista de filme deve ser exibida dentro do fragment da categoria no formato RecyclerView exibindo apenas o título e pôster. Ao clicar no item o usuário será redirecionado para uma tela secundária com informações adicionais.
-  </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-  style=" text-align: justify; margin-top:30px;">
-  Documentação Android:
-  <ul>
-   <li><a href="https://developer.android.com/guide/components/fragments.html?hl=pt-br"> Fragments</a> </li> 
-   <li><a href="https://developer.android.com/guide/topics/ui/layout/recyclerview"> RecyclerView</a> </li>
-   <li><a href="https://www.youtube.com/watch?v=9OWmnYPX1uc"> Search</a> </li>
-   <li><a href="https://developer.android.com/guide/topics/ui/custom-components.html"> Layout personalizado</a> </li>
-  </ul>
-  Links extras:
-  <ul>
-  <li><a href="https://stackoverflow.com/questions/40118264/retrofit-library-with-api-the-movie-db"> StackOverflow: Utilizando Retrofit com themovieDB</a> </li>
-  <li><a href="https://medium.com/android-dev-br/listas-com-recyclerview-d3f41e0d653c">Medium: Listas com RecyclerView</a></li>
-  <li><a href="https://medium.com/collabcode/consumindo-api-rest-no-android-com-retrofit-em-kotlin-parte-2-62d40b49f8be">Medium: Consumindo API com retrofit em Kotlin</a></li>
-   <li><a href="https://themoviedb.org/documentation/api"> API theMovieDB</a> </li> 
-   <li><a href="https://github.com/square/retrofit"> Retrofit</a></li>
-   <li><a href="http://square.github.io/picasso/"> Picasso</a></li>
-
+        <img src="http://gsmwink.nl/wp-content/uploads/2015/06/lgg3zwart.png" class="img-responsive" style="display:inline ">
+    </div>
+        <div class="col-sm-6" style="margin-left:100px">
+      <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab2" role="tablist">
    
-  </ul>
+    <li class="nav-item active" style="margin-right:80px;" >
+      <a class="nav-link active" id="pills-home-tab2" data-toggle="pill" href="#pills-home2" role="tab" aria-controls="pills-home" aria-selected="true">O projeto</a>
+    </li>
+    <li class="nav-item" style="margin-right:80px;">
+      <a class="nav-link" id="pills-profile-tab2" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile" aria-selected="false" >Links úteis</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-contact-tab2" data-toggle="pill" href="#pills-contact2" role="tab" aria-controls="pills-contact" aria-selected="false" >Código</a>
+    </li>
+      </ul>
+    <div class="tab-content" id="pills-tabContent2">
+    <div class="tab-pane active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home-tab2" style=" text-align: justify; margin-top:30px;">
+    A proposta do projeto Calculadora consiste em funções básicas para exercitar algumas particularidades do Kotlin e da programação android. Sendo assim, a ideia do projeto é uma calculadora básica que cheque se a ordem [numero][operador][numero](ex: 3+5 e não 3+-5 ou 3++5) é verdadeira e caso não seja, notificar o usuário através de um Alert.
+    Para este projeto decidi implementar também um histórico da conta para que o usuário acompanhe o progresso da operação e uma função dentro do AlertDialog (Modal de notificação) para substituir o primeiro sinal digitado caso este seja diferente do digitado posteriormente (como no exemplo anterior, o sistema questiona ao usuário se deseja substituir o + pelo - ).
+    O sistema também verifica a tentativa de operações nulas (Divisões e multiplicações por 0) e solicita um segundo valor. 
+    </div>
+    <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab2"
+    style=" text-align: justify; margin-top:30px;">
+    Documentação Android:
+    <ul>
+    <li><a href="https://developer.android.com/guide/topics/text/creating-input-method">Criando um input</a></li>
+    <li><a href="https://developer.android.com/guide/topics/ui/declaring-layout?hl=pt-br">Manipulando um XML</a></li>
+    <li><a href="https://developer.android.com/reference/android/widget/TextView">Visualizador de texto</a></li>
+    <li><a href="https://developer.android.com/reference/android/view/View.OnClickListener.html">Função "Ao clicar"</a></li>
+    </ul>
+    Links extras:
+    <ul>
+    <li><a href="https://stackoverflow.com/questions/33164886/android-textview-do-not-concatenate-text-displayed-with-settext">StackOverflow: Concatenação de texto</a></li>
+     <li><a href="http://www.prandroid.com/2017/09/alert-dialog-box-in-android-using-kotlin.html">Alert Dialog em Kotlin</a></li>
+     <li><a href="http://flaticon.com">Icones estilo Flat</a></li>
+     <li><a href="https://materialpalette.com">Gerador de paleta de Cores Material Design</a></li>
+     <li><a href="https://stackoverflow.com/questions/3320115/android-onclicklistener-identify-a-button">StackOverflow: Identificando um botão</a></li>
+    </ul>
+
+    </div>
+    <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab2">
+    <p style="margin-bottom:30px;"></p>
+    Layout XML, Função de histórico e operações
+    <script src="https://gist.github.com/baiana/1a022ba5d96d009f27b054ebd132af82.js" >
+    </script>
+    <a href="https://github.com/baiana/Programa-Padawan/tree/master/RecomendaFilmes">Consulte o repositório do projeto</a>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    <h4 class="grande" style="margin-top:50px;">Projeto Filmes</h4>
+    <div class="row">
+    <div class="col-sm-6" style="margin-left:100px">
+      <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
+   
+    <li class="nav-item active" style="margin-right:80px;" >
+      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">O projeto</a>
+    </li>
+    <li class="nav-item" style="margin-right:80px;">
+      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" >Links úteis</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" >Código</a>
+    </li>
+      </ul>
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" style=" text-align: justify; margin-top:30px;">
+    Para o projeto recomendaFilmes, a ideia é criar um aplicativo que receba o resultado de uma chamada da API theMovieDB (que guarda os mais diversos dados relacionados a filmes) e exibi-lo para o usuário dentro de categorias. Permitindo  também: pesquisa de filmes não listados,  seleção de filmes "favoritos" e a possibilidade de acesso offline através de persistência em banco de dados. A lista de filme deve ser exibida dentro do fragment da categoria no formato RecyclerView exibindo apenas o título e pôster. Ao clicar no item o usuário será redirecionado para uma tela secundária com informações adicionais.
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+    style=" text-align: justify; margin-top:30px;">
+    Documentação Android:
+    <ul>
+     <li><a href="https://developer.android.com/guide/components/fragments.html?hl=pt-br"> Fragments</a> </li> 
+     <li><a href="https://developer.android.com/guide/topics/ui/layout/recyclerview"> RecyclerView</a> </li>
+     <li><a href="https://www.youtube.com/watch?v=9OWmnYPX1uc"> Search</a> </li>
+     <li><a href="https://developer.android.com/guide/topics/ui/custom-components.html"> Layout personalizado</a> </li>
+    </ul>
+    Links extras:
+    <ul>
+    <li><a href="https://stackoverflow.com/questions/40118264/retrofit-library-with-api-the-movie-db"> StackOverflow: Utilizando Retrofit com themovieDB</a> </li>
+    <li><a href="https://medium.com/android-dev-br/listas-com-recyclerview-d3f41e0d653c">Medium: Listas com RecyclerView</a></li>
+    <li><a href="https://medium.com/collabcode/consumindo-api-rest-no-android-com-retrofit-em-kotlin-parte-2-62d40b49f8be">Medium: Consumindo API com retrofit em Kotlin</a></li>
+     <li><a href="https://themoviedb.org/documentation/api"> API theMovieDB</a> </li> 
+     <li><a href="https://github.com/square/retrofit"> Retrofit</a></li>
+     <li><a href="http://square.github.io/picasso/"> Picasso</a></li>
+    </ul>
+    </div>
+
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+    <p style="margin-bottom:30px;"></p>
+    Chamada Retrofit e criação dos Fragments
+    <script src="https://gist.github.com/baiana/1a022ba5d96d009f27b054ebd132af82.js" >
+    </script>
+    <a href="https://github.com/baiana/Programa-Padawan/tree/master/RecomendaFilmes">Repositório do projeto</a>
+    </div>
+    </div>
+    </div>
+    <div class="col-sm-4">
+      <img src="http://gsmwink.nl/wp-content/uploads/2015/06/lgg3zwart.png" class="img-responsive" style="display:inline ">
+    </div>
 
   </div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-  <p style="margin-bottom:30px;"></p>
-  Chamada Retrofit e criação dos Fragments
-  <script src="https://gist.github.com/baiana/1a022ba5d96d009f27b054ebd132af82.js" >
-  </script>
-  <a href="https://github.com/baiana/Programa-Padawan/tree/master/RecomendaFilmes">Repositório do projeto</a>
-  </div>
-</div>
-  </div>
-  <div class="col-sm-4">
-  <img src="http://gsmwink.nl/wp-content/uploads/2015/06/lgg3zwart.png" class="img-responsive" style="display:inline ">
   </div>
 
-</div>
-</div>
 <div class="container-fluid bg-1 text-center">    
   <h3 class="margin">Aprendizado além do código</h3><br>
   
   </div>
 
-<div class="container-fluid bg-3 text-center">
-<p class="light" style="font-size:25px;">Onde me encontrar ?</p>
-<p class="light">Se quiser uns conselhos da vida, ver meus projetinhos, jogar conversa fora ou só conhecer melhor quem fez essa bagunça toda, clica nas minhas redes sociais abaixo!</p>
-<div class="col-sm-4 content-center">
-<div class="row" style="align-items: center;">
-     <a href="https://www.instagram.com/anabaiana_/" class="fa fa-instagram"></a>
-     <a href="https://github.com/baiana" class="fa fa-github"></a>
-     <a href="https://t.me/anabaiana" class="fa fa-telegram"></a>
-     <a href="#" class="fa fa-slack"></a>
+  <div class="container-fluid bg-3 text-center">
+  <p class="light" style="font-size:25px;">Onde me encontrar ?</p>
+  <p class="light">Se quiser uns conselhos da vida, ver meus projetinhos, jogar conversa fora ou só conhecer melhor quem fez essa bagunça toda, clica nas minhas redes sociais abaixo!</p>
+  <div class="col-sm-4 content-center">
+    <div class="row" style="align-items: center;">
+       <a href="https://www.instagram.com/anabaiana_/" class="fa fa-instagram"></a>
+       <a href="https://github.com/baiana" class="fa fa-github"></a>
+       <a href="https://t.me/anabaiana" class="fa fa-telegram"></a>
+       <a href="#" class="fa fa-slack"></a>
     </div>
-    </div>
+  </div>
 </div>
 
 <!-- Footer -->
